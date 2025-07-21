@@ -3,88 +3,108 @@
   padding: 0;
 }
 
-.container{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: minmax(150px, 1fr) minmax(300px, 5fr);
-    grid-template-rows: 1fr 6fr;
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) minmax(300px, 5fr);
+  grid-template-rows: 1fr 6fr;
 }
 
-.header{
-    grid-row: span 1;
-    grid-column: 2/ span 1;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+.header {
+  grid-row: span 1;
+  grid-column: 2 / span 1;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
-.header-container{
+.header-container {
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+  gap: 1rem;
+}
+
+.header-container > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.search-bar {
+  margin-right: auto;
+}
+
+.search-bar input {
+  width: clamp(100px, 500px, 800px);
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: thistle;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.clicks{
     display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.header-container > *{
-    display: flex;
+    gap: 2rem;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
 }
 
-.search-bar{
-    margin-right: auto;
-}
-
-.search-bar input{
-    width: clamp(100px, 500px, 800px);
-    border: 1px solid black;
+button{
+    padding: 0.5rem 1.5rem;
+    border: none;
     border-radius: 10px;
-    background-color: thistle;
+    background-color: lightblue;
+    cursor: pointer;
 }
 
-.header-wrapper{
-   background-color: yellow;
-}   
-
-.profile img{
-    background-color: rgb(199, 199, 245);
-    border-radius: 50%;
-    max-width: 3rem;
-    max-height: 3rem;
+.profile img {
+  background-color: rgb(199, 199, 245);
+  border-radius: 50%;
+  max-width: 3rem;
+  max-height: 3rem;
 }
 
-.sidebar{
-    grid-row: 1/span 2;
+.sidebar {
+  grid-row: 1 / span 2;
 }
 
-.sidebar-container{
-    display: grid;
-    gap: 3rem;
+.sidebar-container {
+  display: grid;
+  gap: 3rem;
 }
 
-.logo{
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
+.logo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
-.nav,.law{
-    display: grid;
-    gap: 1rem;
+.nav,
+.law {
+  display: grid;
+  gap: 1rem;
 }
 
-.sidebar-container p{
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    font-size: 1rem;
+.sidebar-container p {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1rem;
 }
 
-.logo img{
-    max-width: 3rem;
-    border-radius: 5%;
+.logo img {
+  max-width: 3rem;
+  border-radius: 5%;
 }
 
-.main{
-    background-color: green;
+.main {
+  background-color: green;
 }
