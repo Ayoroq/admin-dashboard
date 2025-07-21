@@ -6,14 +6,50 @@
 .container{
     height: 100vh;
     display: grid;
-    grid-template-columns: minmax(200px, 1fr) 5fr;
+    grid-template-columns: minmax(150px, 1fr) minmax(300px, 5fr);
     grid-template-rows: 1fr 6fr;
 }
 
 .header{
     grid-row: span 1;
     grid-column: 2/ span 1;
-    background-color: blue;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.header-container > *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.search-bar{
+    margin-right: auto;
+}
+
+.search-bar input{
+    width: clamp(100px, 500px, 800px);
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: thistle;
+}
+
+.header-wrapper{
+   background-color: yellow;
+}   
+
+.profile img{
+    background-color: rgb(199, 199, 245);
+    border-radius: 50%;
+    max-width: 3rem;
+    max-height: 3rem;
 }
 
 .sidebar{
@@ -27,25 +63,25 @@
 
 .logo{
     display: flex;
-    gap: 10px;
+    gap: 1rem;
     align-items: center;
     justify-content: center;
 }
 
 .nav,.law{
     display: grid;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .sidebar-container p{
     display: flex;
-    gap: 10px;
+    gap: 1rem;
     align-items: center;
     font-size: 1rem;
 }
 
 .logo img{
-    width: 30%;
+    max-width: 3rem;
     border-radius: 5%;
 }
 
