@@ -6,7 +6,7 @@
 .container {
   height: 100vh;
   display: grid;
-  grid-template-columns: minmax(150px, 1fr) minmax(300px, 5fr);
+  grid-template-columns: minmax(150px, 0.7fr) 5fr;
   grid-template-rows: 1fr 6fr;
 }
 
@@ -107,4 +107,24 @@ button{
 
 .main {
   background-color: green;
+  display: grid;
+  grid-template-columns: minmax(400px, 3fr) 1fr;
+}
+
+.delivery-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 2rem;
+}
+
+.delivery-card {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.sub-main-container {
+  background-color: lightcoral;
 }
