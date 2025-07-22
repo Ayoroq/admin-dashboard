@@ -126,10 +126,11 @@ button{
   transition: transform 0.2s ease;
 }
 
-.delivery-card:hover {
+.delivery-card:hover,.fleet-card:hover,.user-card:hover {
   transform: translateY(-5px);
 }
 
 .sub-main-container {
   background-color: lightcoral;
+  display: grid;
 }
