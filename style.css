@@ -4,9 +4,9 @@
 }
 
 :root {
-  --main-bg-colour: #c34646;
-  --main-card-colour: rgb(143, 185, 222);
-  color: rgb(43, 43, 43);
+  --main-bg-colour: #4e784f;
+  --main-card-colour: rgb(4, 42, 36);
+  color: #f6f6f6;
 }
 
 html {
@@ -98,6 +98,8 @@ button:hover {
 .sidebar {
   grid-row: 1 / span 2;
   padding: 2rem;
+  margin-right: -1.5rem;
+    background-color: var(--main-bg-colour)
 }
 
 .sidebar-container {
@@ -180,7 +182,7 @@ h2 {
 .user-card {
   line-height: 2;
   padding: 10px;
-  border-bottom: 1px solid #262121;
+  border-bottom: 1px solid rgb(234, 234, 28);
 }
 
 /* Remove border from last item */

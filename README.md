@@ -4,7 +4,7 @@
 
 ## Project Overview
 
-This project is a responsive admin dashboard for managing intergalactic shipments for CosmoDash, created as part of The Odin Project curriculum. This project demonstrates the implementation of CSS Grid and Flexbox to create a responsive dashboard layout.
+CosmoDash is a responsive admin dashboard for managing intergalactic shipments, created as part of The Odin Project curriculum. This project demonstrates the implementation of CSS Grid and Flexbox to create a responsive dashboard layout with a space-themed interface.
 
 ## Features
 
@@ -19,6 +19,7 @@ This project is a responsive admin dashboard for managing intergalactic shipment
 - CSS3 (Grid & Flexbox)
 - Custom CSS Reset (Josh Comeau's reset)
 - SVG icons
+- Google Fonts (Iceberg)
 
 ## Project Structure
 
@@ -35,8 +36,9 @@ admin-dashboard/
 
 - **Grid Layout**: The main container uses CSS Grid to create the sidebar and main content areas
 - **Card Components**: Delivery cards, fleet status cards, and user activity cards use a consistent design pattern
-- **Interactive Elements**: Hover effects on cards enhance user experience
+- **Interactive Elements**: Hover effects on cards and buttons enhance user experience
 - **Iconography**: Custom SVG icons for navigation and functionality
+- **Color Scheme**: Space-themed color palette with CSS variables for easy customization
 
 ## Learning Outcomes
 
@@ -59,7 +61,7 @@ This project demonstrates proficiency in:
 - Project idea and requirements from [The Odin Project](https://www.theodinproject.com/)
 - CSS Reset by [Josh Comeau](https://www.joshwcomeau.com/css/custom-css-reset/)
 - SVG icons from [Google Material Design Icons](https://fonts.google.com/icons?selected=Material+Icons)
-
+- Font from [Google Fonts](https://fonts.google.com/specimen/Iceberg)
 ## License
 
 This project is part of The Odin Project curriculum and is available for educational purposes.
