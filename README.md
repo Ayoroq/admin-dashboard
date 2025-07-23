@@ -1,6 +1,6 @@
 # CosmoDash - Intergalactic Shipments Dashboard
 
-![CosmoDash Logo]()
+![Dashboard Screenshot](assets/admin_dashboard.jpeg)
 
 ## Project Overview
 
