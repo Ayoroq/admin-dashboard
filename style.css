@@ -3,11 +3,28 @@
   padding: 0;
 }
 
+:root {
+  --main-bg-colour: #c34646;
+  --main-card-colour: rgb(143, 185, 222);
+  color: rgb(43, 43, 43);
+}
+
+html {
+  font-size: 16px;
+  font-family: "Iceberg", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-color: var(--main-bg-colour);
+}
+
 .container {
   height: 100vh;
   display: grid;
-  grid-template-columns: minmax(150px, 0.7fr) 5fr;
+  grid-template-columns: minmax(200px, 0.7fr) 5fr;
   grid-template-rows: 1fr 6fr;
+  gap: 1rem;
 }
 
 .header {
@@ -42,7 +59,7 @@
   padding: 0.3rem;
   border: 1px solid black;
   border-radius: 10px;
-  background-color: thistle;
+  background-color: rgb(234, 233, 233)
 }
 
 .header-wrapper {
@@ -62,7 +79,7 @@ button {
   padding: 0.5rem 1.5rem;
   border: none;
   border-radius: 10px;
-  background-color: lightblue;
+  background-color: rgb(234, 234, 28);
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -93,6 +110,7 @@ button:hover {
   gap: 1rem;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
 }
 
 .nav,
@@ -116,7 +134,7 @@ button:hover {
 .main {
   display: grid;
   grid-template-columns: minmax(400px, 3fr) 1fr;
-  padding: 2rem;
+  padding: 0 2rem 2rem;
   gap: 2rem;
 }
 
@@ -131,16 +149,17 @@ button:hover {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  background-color: #f0f0f0;
   border-radius: 10px;
   padding: 1rem 1.5rem;
+  background-color: var(--main-card-colour);
 }
 
 .delivery-card {
-  background-color: #f0f0f0;
   border-radius: 10px;
   padding: 1rem 1.5rem;
   transition: transform 0.2s ease;
+  line-height: 2;
+  background-color: var(--main-card-colour);
 }
 
 .delivery-card:hover,
@@ -153,12 +172,13 @@ h2 {
   margin-bottom: 1rem;
 }
 
-.sub-title{
-    margin-top: 2rem;
+.sub-title {
+  margin-top: 2rem;
 }
 
 .fleet-card,
 .user-card {
+  line-height: 2;
   padding: 10px;
   border-bottom: 1px solid #262121;
 }
