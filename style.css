@@ -99,8 +99,7 @@ button:hover {
   grid-row: 1 / span 2;
   padding: 2rem;
   margin-right: -1.5rem;
-  color: black;
-    background-color: rgb(234, 233, 233)
+  background-color: var(--main-bg-colour);
 }
 
 .sidebar-container {
